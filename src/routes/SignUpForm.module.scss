@@ -1,12 +1,92 @@
 @import "@/assets/styles/colors";
+@import "@/assets/styles/typography";
 
 .sign-up-form {
   display: grid;
+  grid-template-rows: 23.5rem auto;
   height: 100vh;
+  padding: 0 1.5rem;
   background-color: $color-primary-red;
   background-image: url("@/assets/images/bg-intro-mobile.png");
 
+  header {
+    display: grid;
+    grid-template-rows: 6rem auto;
+    margin-top: 5.7rem;
+    color: white;
+    text-align: center;
+
+    h1 {
+      font-size: 28px;
+      font-weight: $font-bold;
+      letter-spacing: -0.29px;
+      line-height: 36px;
+    }
+
+    p {
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 26px;
+      text-align: center;
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 7.2rem auto;
+
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 87px;
+      padding: 0 4rem;
+      border-radius: 0.75rem;
+      background-color: $color-accent-blue;
+      box-shadow: 0 .5rem 0 0 hsl(0deg 0% 0% / 18%);
+      color: white;
+      text-align: center;
+
+      strong {
+        font-weight: $font-semibold;
+      }
+    }
+
+    .form {
+      display: grid;
+      grid-row-gap: 1rem;
+      grid-template-rows: auto auto auto auto auto auto;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      background-color: white;
+
+      input {
+        height: 3.5rem;
+        padding: 0 1rem;
+        border: 1px solid lightgray;
+        border-radius: 0.25rem;
+
+        &::placeholder {
+          font-weight: $font-semibold;
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 1440px) {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     background-image: url("@/assets/images/bg-intro-desktop.png");
+
+    header {
+      text-align: left;
+
+      h1 {
+        font-size: 50px;
+        font-weight: $font-bold;
+        letter-spacing: -0.52px;
+        line-height: 55px;
+      }
+    }
   }
 }
