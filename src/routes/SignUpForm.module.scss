@@ -1,0 +1,12 @@
+@import "@/assets/styles/colors";
+
+.sign-up-form {
+  display: grid;
+  height: 100vh;
+  background-color: $color-primary-red;
+  background-image: url("@/assets/images/bg-intro-mobile.png");
+
+  @media screen and (min-width: 1440px) {
+    background-image: url("@/assets/images/bg-intro-desktop.png");
+  }
+}
