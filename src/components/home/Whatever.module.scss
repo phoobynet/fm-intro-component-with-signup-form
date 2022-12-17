@@ -1,0 +1,13 @@
+.whatever {
+  &-feature-list {
+    @apply mt-10 list-disc pl-6 text-2xl;
+  }
+
+  &-main-content {
+    @apply flex h-[250px] items-center justify-center;
+  }
+
+  &-rude-message {
+    @apply text-3xl font-bold tracking-wider;
+  }
+}
