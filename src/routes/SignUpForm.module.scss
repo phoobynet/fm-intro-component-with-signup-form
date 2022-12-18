@@ -23,7 +23,7 @@ body {
 .sign-up-form {
   display: grid;
   grid-template-rows: 23.5rem auto;
-  max-width: 327px;
+  max-width: 20.438rem;
   margin-bottom: 1rem;
 
   header {
@@ -36,14 +36,14 @@ body {
     h1 {
       font-size: 28px;
       font-weight: $font-bold;
-      letter-spacing: -0.29px;
-      line-height: 36px;
+      letter-spacing: -0.0181rem;
+      line-height: 2.25rem;
     }
 
     p {
       font-size: 1rem;
       letter-spacing: 0;
-      line-height: 26px;
+      line-height: 1.625rem;
       text-align: center;
     }
   }
@@ -59,7 +59,7 @@ body {
       display: grid;
       grid-row-gap: 1rem;
       grid-template-rows: auto auto auto auto 56px auto;
-      min-height: 442px;
+      min-height: 27.625rem;
       padding: 1.5rem;
       border-radius: 0.75rem;
       background-color: white;
@@ -70,7 +70,7 @@ body {
 @media screen and (min-width: 1440px) {
   .sign-up-form {
     grid-column-gap: 2rem;
-    grid-template-columns: 531px 540px;
+    grid-template-columns: 33.188rem 33.75rem;
     max-width: unset;
     height: 100vh;
     margin-top: 0.8rem;
@@ -87,16 +87,16 @@ body {
       text-align: left;
 
       h1 {
-        font-size: 50px;
+        font-size: 3.125rem;
         font-weight: $font-bold;
-        letter-spacing: -0.52px;
-        line-height: 55px;
+        letter-spacing: -0.0325rem;
+        line-height: 3.438rem;
       }
 
       p {
         font-size: 1rem;
         letter-spacing: 0;
-        line-height: 26px;
+        line-height: 1.625rem;
         text-align: left;
       }
     }
@@ -104,10 +104,10 @@ body {
     main {
       grid-row-gap: 1.3rem;
       grid-template-rows: 3.75rem auto;
-      min-width: 540px;
+      min-width: 33.75rem;
 
       .form {
-        min-height: 474px;
+        min-height: 29.625rem;
         padding: 2.2rem 2.5rem;
       }
     }
