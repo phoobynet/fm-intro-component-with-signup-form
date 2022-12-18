@@ -1,0 +1,18 @@
+@import "@/assets/styles/colors";
+@import "@/assets/styles/typography";
+
+.input {
+  height: 3.5rem;
+  padding: 0 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+
+  &::placeholder {
+    font-size: 0.875rem;
+    font-weight: $font-semibold;
+  }
+
+  &:focus {
+    border: 0.1rem solid $color-accent-blue !important;
+  }
+}

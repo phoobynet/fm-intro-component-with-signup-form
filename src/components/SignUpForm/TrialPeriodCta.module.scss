@@ -1,0 +1,19 @@
+@import "@/assets/styles/colors";
+@import "@/assets/styles/typography";
+
+.trial-period-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 4rem;
+  border-radius: 0.75rem;
+  background-color: $color-accent-blue;
+  box-shadow: 0 .5rem 0 0 hsl(0deg 0% 0% / 18%);
+  color: white;
+  text-align: center;
+
+  strong {
+    font-weight: $font-semibold;
+  }
+}
