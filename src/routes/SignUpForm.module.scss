@@ -69,14 +69,17 @@ body {
 
 @media screen and (min-width: 1440px) {
   .sign-up-form {
-    grid-column-gap: 3rem;
+    grid-column-gap: 0;
     grid-template-columns: 525px 540px;
+    max-width: unset;
     height: 100vh;
     place-items: center;
     place-content: center;
+    margin-bottom: unset;
 
     header {
       display: grid;
+      grid-row-gap: 3rem;
       grid-template-rows: 6rem auto;
       margin-top: 0;
       text-align: left;
@@ -94,6 +97,11 @@ body {
         line-height: 26px;
         text-align: left;
       }
+    }
+
+    main {
+      grid-row-gap: 1.3rem;
+      grid-template-rows: 3.75rem auto;
     }
   }
 }
