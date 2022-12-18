@@ -69,18 +69,20 @@ body {
 
 @media screen and (min-width: 1440px) {
   .sign-up-form {
-    grid-column-gap: 0;
-    grid-template-columns: 525px 540px;
+    grid-column-gap: 2rem;
+    grid-template-columns: 531px 540px;
     max-width: unset;
     height: 100vh;
+    margin-top: 0.8rem;
+    margin-bottom: unset;
     place-items: center;
     place-content: center;
-    margin-bottom: unset;
 
     header {
       display: grid;
-      grid-row-gap: 3rem;
-      grid-template-rows: 6rem auto;
+      grid-row-gap: 2rem;
+      grid-template-rows: auto auto;
+      justify-content: space-between;
       margin-top: 0;
       text-align: left;
 
@@ -102,6 +104,12 @@ body {
     main {
       grid-row-gap: 1.3rem;
       grid-template-rows: 3.75rem auto;
+      min-width: 540px;
+
+      .form {
+        min-height: 474px;
+        padding: 2.2rem 2.5rem;
+      }
     }
   }
 }
