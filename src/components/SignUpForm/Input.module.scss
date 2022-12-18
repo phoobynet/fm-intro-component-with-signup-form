@@ -25,6 +25,10 @@
 
   @media screen and (min-width: 1440px) {
     padding: 0 1.75rem;
+
+    &[data-error=true] {
+      background-position-x: 95%;
+    }
   }
 }
 
