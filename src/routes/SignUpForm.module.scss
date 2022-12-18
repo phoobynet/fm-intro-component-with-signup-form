@@ -4,7 +4,7 @@
 body {
   background-color: $color-primary-red;
   background-image: url("@/assets/images/bg-intro-mobile.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center center;
   background-size: cover;
 
@@ -15,12 +15,15 @@ body {
 
 
 .container {
-  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .sign-up-form {
   display: grid;
   grid-template-rows: 23.5rem auto;
+  max-width: 327px;
+  margin-bottom: 1rem;
 
   header {
     display: grid;
@@ -53,7 +56,7 @@ body {
       display: grid;
       grid-row-gap: 1rem;
       grid-template-rows: auto auto auto auto 56px auto;
-      max-height: 442px;
+      min-height: 442px;
       padding: 1.5rem;
       border-radius: 0.75rem;
       background-color: white;

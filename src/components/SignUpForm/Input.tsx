@@ -1,13 +1,22 @@
 import styles from './Input.module.scss'
 import React, { InputHTMLAttributes } from 'react'
 
-type Props = Omit<InputHTMLAttributes<HTMLInputElement>, 'className'>
+interface Props extends Omit<InputHTMLAttributes<HTMLInputElement>, 'className'> {
+  error?: string
+}
 
-export default function Input (props: Props) {
+export default function Input ({
+  error,
+  ...theRest
+}: Props) {
   return (
-    <input
-      className={styles.input}
-      {...props}
-    />
+    <div>
+      <input
+        className={styles.input}
+        {...theRest}
+        data-error={!!error}
+      />
+      {error && <div className={styles.inputError}>{error}</div>}
+    </div>
   )
 }

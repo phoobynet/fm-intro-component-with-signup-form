@@ -14,4 +14,21 @@
   font-weight: $font-semibold;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
+
+  @media screen and (min-width: 1440px) {
+    &:hover {
+      transition-property: opacity;
+      transition-duration: 200ms;
+      opacity: .6;
+    }
+  }
+
+  &:active {
+    transform: translateY(0.2rem);
+    transition-property: all;
+    transition-duration: 200ms;
+    opacity: 1;
+    box-shadow: 0 0 0 0 hsl(153deg 59% 46% / 100%);
+  }
 }

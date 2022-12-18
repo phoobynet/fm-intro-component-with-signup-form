@@ -1,10 +1,13 @@
 import styles from './ClaimFreeTrialCta.module.scss'
+import { ButtonHTMLAttributes } from 'react'
 
-export default function ClaimFreeTrialCta () {
+type Props = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'className'>
+
+export default function ClaimFreeTrialCta (props: Props) {
   return (
     <button
       className={styles.claimFreeTrailCta}
-      type="button"
+      {...props}
     >
       claim your free trial
     </button>
